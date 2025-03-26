@@ -1,4 +1,8 @@
 # Quantum Nanotube Lattice Optics
+<<<<<<< HEAD
+=======
+[![DOI](https://zenodo.org/badge/954944290.svg)](https://doi.org/10.5281/zenodo.15085938)
+>>>>>>> b092eb56d73c15ce75f0d1d87b538cd03b5e1d5c
 
 **Repository:** `qnt-lattice-optics`
 
