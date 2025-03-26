@@ -10,6 +10,7 @@
 \usepackage{siunitx}
 \usepackage{tikz}
 \usepackage{lipsum}
+\usepackage{url}
 
 \title{Quantum Nanotube Array as Photonic Repeater and Sensor:\\A Novel Architecture for Quantum Communication, Sensing, and Decentralization}
 \author{Paraxiom}
@@ -20,7 +21,7 @@
 	\maketitle
 	
 	\begin{abstract}
-		This document outlines a conceptual architecture for a quantum repeater and quantum sensor based on arrays of carbon nanotubes with embedded gas cavities and externally coated reflective surfaces. Each nanotube acts as a microscopic cavity capable of maintaining a photon in resonance. The system's collective output, when properly aligned, can be externally monitored via interference patterns or field perturbations, making it a candidate for distributed quantum communication, decentralized sensing, and substrate-based quantum information processing.
+		This document outlines a conceptual architecture for a quantum repeater and quantum sensor based on arrays of carbon nanotubes with embedded gas cavities and externally coated reflective surfaces. Each nanotube acts as a microscopic cavity capable of maintaining a photon in resonance. The system operates at room temperature without requiring cryogenic cooling, and its polymer matrix provides natural acoustic isolation from environmental vibrations. The system's collective output, when properly aligned, can be externally monitored via interference patterns or field perturbations, making it a candidate for distributed quantum communication, decentralized sensing, and substrate-based quantum information processing.
 	\end{abstract}
 	
 	\section{Introduction}
@@ -35,6 +36,9 @@
 		\item May be positioned in an electromagnetic field for alignment or modulation.
 		\item Is embedded in a polymer matrix to ensure spatial stability, heat dissipation, and mechanical integrity.
 	\end{itemize}
+	
+	\subsection{Alternative Materials}
+	Beyond carbon nanotubes, materials such as boron nitride nanotubes (BNNTs) and transition metal dichalcogenide (TMDC) nanotubes (e.g., WS$_2$) offer unique properties. BNNTs exhibit excellent thermal stability and can host spin defects suitable for quantum sensing applications \cite{gao2023nanotube}. TMDC nanotubes provide diverse electronic and optical characteristics beneficial for various applications \cite{yadgarov2020nanotubes}.
 	
 	\subsection{Geometric Parameters}
 	\begin{itemize}
@@ -54,6 +58,9 @@
 	\end{enumerate}
 	This allows information-bearing photons to be replicated coherently, acting as a form of quantum repeater.
 	
+	\subsection{Piezoelectric Excitation}
+	To stimulate synchronization across the nanotube ensemble, mechanical excitation may be introduced through embedded piezoelectric layers beneath the polymer matrix. These actuators can generate acoustic wavefronts at precise frequencies, coupling directly into the matrix and modulating the resonance condition of the quantum gas-photon system within each tube. This approach allows non-invasive, field-driven control over emission timing and coherence, and may serve as a viable alternative to laser pumping or external field alignment in decentralized or passive implementations.
+	
 	\section{Quantum Sensor Properties}
 	As quantum resonators:
 	\begin{itemize}
@@ -63,9 +70,6 @@
 	\end{itemize}
 	This renders the array an ultra-sensitive quantum sensor capable of distributed measurement.
 	
-	
-	\subsection{Piezoelectric Excitation}
-	To stimulate synchronization across the nanotube ensemble, mechanical excitation may be introduced through embedded piezoelectric layers beneath the polymer matrix. These actuators can generate acoustic wavefronts at precise frequencies, coupling directly into the matrix and modulating the resonance condition of the quantum gas-photon system within each tube. This approach allows non-invasive, field-driven control over emission timing and coherence, and may serve as a viable alternative to laser pumping or external field alignment in decentralized or passive implementations.
 	\section{External Readout and Monitoring}
 	Due to the vast number of nanotubes:
 	\begin{itemize}
@@ -86,7 +90,7 @@
 		\item Amplify weak signals through constructive interference.
 		\item Detect perturbations in phase or wavelength due to external physical fields.
 	\end{itemize}
-	The array can be designed with regular spacing (akin to a diffraction grating), enabling precise angular dispersion of the output beam.
+	The array can be designed with regular spacing (akin to a diffraction grating), enabling precise angular dispersion of the output beam. This output can then be analyzed to infer internal state changes or external interactions.
 	
 	\subsection{Photonic Bandgap Control}
 	By varying the spacing, coating thickness, and refractive index contrast between tubes and the matrix, a photonic bandgap structure can be engineered to control light propagation within the composite. This could enable filtering, delay lines, or wavelength-selective resonance within the repeater or sensor system.
@@ -122,16 +126,6 @@
 	\section{Conclusion}
 	The proposed carbon nanotube architecture acts as both a quantum repeater and a quantum sensor by leveraging its collective optical and electromagnetic response. It offers a framework for decentralized quantum communication and environmental sensing, embedding quantum functionality directly into substrates. Although still theoretical, this design outlines a plausible low-power, scalable path toward optically-driven, distributed quantum infrastructure.
 	
-	\section{References}
-	\begin{itemize}
-		\item S.G. Balasubramani et al., ``Noble gas encapsulation into carbon nanotubes: Predictions from analytical model and DFT studies,'' \textit{J. Chem. Phys.}, 141, 184304 (2014).
-		\item D.L. Chen et al., ``Gas desorption energies on metallic and semiconducting SWCNTs,'' \textit{J. Am. Chem. Soc.}, 135, 7768 (2013).
-		\item B.J. Cox et al., ``Mechanics of atoms and fullerenes in SWCNTs,'' \textit{Proc. R. Soc. A}, 463, 461--477 (2007).
-		\item A.T. Nasrabadi and M. Foroutan, ``Polymer interaction with boron nitride nanotubes,'' \textit{J. Phys. Chem. B}, 114, 15429 (2010).
-		\item M. Foroutan, ``Interfacial binding in carbon nanotube-polymer systems,'' \textit{J. Phys. Chem. B}, 114, 5320 (2010).
-		\item Nanorh.com, ``Platinum coated carbon nanotubes: Applications in catalysis and energy storage,'' Retrieved 2025-03-25, [https://www.nanorh.com/product/platinum-coated-carbon-nanotubes-pt-cnt/].
-	\end{itemize}
-	
 	\section*{Appendix: Decentralized Optical Mesh Networks}
 	Decentralized optical mesh networks are non-hierarchical communication infrastructures wherein optical signals (transmitted via fiber or free-space optics) propagate across a dynamically routed mesh of interconnected nodes. These systems are designed to operate without centralized control, offering fault tolerance, low latency, and resilient communication even under node or link failure.
 	
@@ -154,5 +148,33 @@
 	\end{itemize}
 	
 	This architecture enables a substrate-level implementation of distributed quantum communication, further supporting Paraxiom's mission to create decentralized, post-quantum network infrastructures.
+	
+	\begin{thebibliography}{99}
+		
+		\bibitem{gao2023nanotube}
+		Xingyu Gao, Sumukh Vaidya, Saakshi Dikshit, Peng Ju, Kunhong Shen, Yuanbin Jin, Shixiong Zhang, and Tongcang Li, ``Nanotube spin defects for omnidirectional magnetic field sensing,'' \textit{Nature Communications}, vol. 15, no. 1, p. 7697, 2024. Available: \url{https://www.nature.com/articles/s41467-024-51941-2}
+		
+		\bibitem{yadgarov2020nanotubes}
+		Lena Yadgarov and Reshef Tenne, ``Nanotubes from Transition Metal Dichalcogenides: Recent Progress in the Synthesis, Characterization and Electrooptical Properties,'' \textit{Small}, vol. 16, no. 32, p. 200503, 2020. Available: \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/smll.202400503}
+		
+		\bibitem{balasubramani2014}
+		S.G. Balasubramani et al., ``Noble gas encapsulation into carbon nanotubes: Predictions from analytical model and DFT studies,'' \textit{J. Chem. Phys.}, 141, 184304 (2014).
+		
+		\bibitem{chen2013}
+		D.L. Chen et al., ``Gas desorption energies on metallic and semiconducting SWCNTs,'' \textit{J. Am. Chem. Soc.}, 135, 7768 (2013).
+		
+		\bibitem{cox2007}
+		B.J. Cox et al., ``Mechanics of atoms and fullerenes in SWCNTs,'' \textit{Proc. R. Soc. A}, 463, 461--477 (2007).
+		
+		\bibitem{nasrabadi2010}
+		A.T. Nasrabadi and M. Foroutan, ``Polymer interaction with boron nitride nanotubes,'' \textit{J. Phys. Chem. B}, 114, 15429 (2010).
+		
+		\bibitem{foroutan2010}
+		M. Foroutan, ``Interfacial binding in carbon nanotube-polymer systems,'' \textit{J. Phys. Chem. B}, 114, 5320 (2010).
+		
+		\bibitem{nanorh2025}
+		Nanorh.com, ``Platinum coated carbon nanotubes: Applications in catalysis and energy storage,'' Retrieved 2025-03-25. \url{https://www.nanorh.com/product/platinum-coated-carbon-nanotubes-pt-cnt/}
+		
+	\end{thebibliography}
 	
 \end{document}
