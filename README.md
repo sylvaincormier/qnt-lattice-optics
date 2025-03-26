@@ -21,6 +21,12 @@ Our goal is to provide an **open scientific framework** for next-generation quan
 - Operable at room temperature without cryogenic requirements
 - Resilient against common decoherence mechanisms
 
+## Architecture Diagram
+
+![Quantum Nanotube Array Architecture](diagrams/receipe.png)
+
+*Figure 1: Complete architectural overview showing physical components, operating mechanisms, control systems, and applications of the quantum nanotube array.*
+
 ## Project Structure
 ```
 qnt-lattice-optics/
