@@ -40,22 +40,30 @@ qnt-lattice-optics/
 ├── README.md # This file
 ```
 
-## Current Status
-- ✅ Comprehensive theoretical model developed
-- ✅ Bibliography and peer-reviewed support for:
-  - Noble gas encapsulation in CNTs
-  - Metallization of CNTs with Pt
-  - Acoustic and electromagnetic interactions
-  - CNT-polymer matrix for stability and transparency
-  - Phonon-photon interactions in nanostructures
-  - Room-temperature quantum coherence mechanisms
-- ✅ Decoherence mitigation strategies identified
-- ✅ Far-field sensing via optical interference patterns
-- ✅ Fabrication and scalability pathways outlined
-- ✅ Integration approach with existing quantum infrastructure
-- 🔜 Experimental validation
-- 🔜 Prototype development
+## 🧠 Current Development Status
 
+✅ Theoretical Foundations
+	•	Detailed architecture of reflective quantum nanotube arrays (RQNA) as room-temperature photonic resonators
+	•	Bibliographic validation of:
+	•	Noble gas encapsulation in CNTs
+	•	Platinum and silver-based CNT metallization
+	•	CNT-polymer matrix for mechanical stability, acoustic isolation, and optical transparency
+	•	Phonon–photon coupling mechanisms
+	•	Room-temperature coherence via field-driven and phononic synchronization
+
+✅ Functional Capabilities Outlined
+	•	Decoherence mitigation through structural confinement and passive field shielding
+	•	Far-field readout and sensing using aggregate optical interference patterns
+	•	Pathways for integration into quantum repeaters, passive QKD nodes, and mesh-based quantum networks
+
+✅ Engineering and Scaling Considerations
+	•	Nanofabrication feasibility supported by literature and commercial materials (e.g., Pt-CNTs)
+	•	Potential for polymer-embedded scalable substrates with high tube density
+	•	Compatibility with existing quantum photonic and cryo-agnostic infrastructure
+
+🔜 Next Milestones
+	•	Experimental bench validation of emission behavior and phonon-photon coherence
+	•	Prototype fabrication: first-generation planar RQNA layer with passive optical output
 ## Alternative Materials
 Beyond carbon nanotubes, we've identified several promising alternative materials:
 - Boron nitride nanotubes (BNNTs) for enhanced thermal stability
